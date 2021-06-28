@@ -1,0 +1,11 @@
+---
+# vars file for newroles
+#user:
+#  - name: baha2
+#    password: "$6$mysecretsalt$6bIjBq56BukybsSm4pvH7G5/1EGRUOqq.vSm.BKYBXjfe/NP6XJl.DkJirmUW7cZeRu5QaYveXuinpAM/D3ME/"
+
+#  - name: zaineb2
+#    password: "$6$mysecretsalt$6bIjBq56BukybsSm4pvH7G5/1EGRUOqq.vSm.BKYBXjfe/NP6XJl.DkJirmUW7cZeRu5QaYveXuinpAM/D3ME/"
+
+#state: present
+

@@ -1,0 +1,49 @@
+all:
+
+# VARIABLES Section
+
+  vars:
+# User Variables
+    user:
+    - name: alice
+      password: "$6$mysecretsalt$6bIjBq56BukybsSm4pvH7G5/1EGRUOqq.vSm.BKYBXjfe/NP6XJl.DkJirmUW7cZeRu5QaYveXuinpAM/D3ME/"
+      group: alice1
+
+    - name: boob
+      password: "$6$mysecretsalt$6bIjBq56BukybsSm4pvH7G5/1EGRUOqq.vSm.BKYBXjfe/NP6XJl.DkJirmUW7cZeRu5QaYveXuinpAM/D3ME/"
+      group: boob1
+# Group variables
+    group:
+    - name: alice1
+      gid: 3213
+    - name: boob1
+      gid: 6543
+
+# Server share point variable
+    nfsServer_share_point: /partition/nfsServer1
+        
+# Client share point variable      
+    nfsClient_share_point: /partition/nfsClient1
+
+# NFS server hosts
+    nfsServerHosts: 192.168.239.137
+# NFS client hosts:
+    nfsClientHosts: 192.168.239.134
+
+# NFS mount options
+    nfs_mount_opt: (rw,sync,no_root_squash,no_subtree_check,insecure)        
+      
+
+
+# HOSTS GROUPS section
+
+# NFS_SERVER
+nfs_server:
+  hosts:
+    192.168.239.137:
+# NFS_CLIENT   
+nfs_client:
+  hosts:
+    192.168.239.134:
+
+
